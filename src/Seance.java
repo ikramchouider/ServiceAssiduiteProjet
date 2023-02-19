@@ -41,14 +41,15 @@ public class Seance {
 
     public void afficher(Etudiant etudiant) {
         int i = 0;
-        while (this.etudiants[i].getnom() != etudiant.getprenom()) {
+        while (this.etudiants[i].getnom() != etudiant.getnom()) {
             i++;
         }
-        this.etudiants[i].afficher();
-        if (abscence[i])
-            System.out.println(" present(e)");
-        else
+
+        if (!abscence[i]) {
+            System.out.println("Date : " + date + "Module:" + module.getmodule());
             System.out.println("abscent(e)");
+        }
+
     }
 
 }

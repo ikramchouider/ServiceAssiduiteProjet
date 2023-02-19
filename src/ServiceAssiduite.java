@@ -23,6 +23,7 @@ public class ServiceAssiduite {
     }
 
     public void Afficher(Etudiant etudiant) {
+        etudiant.afficher();
         for (int i = 0; i < NBseances; i++) {
             seances[i].afficher(etudiant);
         }

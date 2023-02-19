@@ -49,7 +49,7 @@ public class App {
         serviceESI.AddSeance(TD1);
         serviceESI.AddSeance(TPTD1);
         serviceESI.AddSeance(TPTD2);
-        // Deux_CPI.Afficher();
+        Deux_CPI.Afficher();
         // serviceESI.Afficher(POO);
         // serviceESI.Afficher();
         // serviceESI.Afficher(e3);

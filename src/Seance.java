@@ -22,7 +22,7 @@ public class Seance {
                 j++;
             }
             abscence[j] = false;
-            module.setnbAbsence(etudiants[i]);
+            module.setnbAbsence(etudiants[j]);
         }
 
     }

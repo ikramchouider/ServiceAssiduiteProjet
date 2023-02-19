@@ -3,10 +3,10 @@ public class App {
         /* Creation d'un Niveau 2CPI */
         Niveau Deux_CPI = new Niveau("2CPI");
         /* Creation d'un module POO */
-        Module POO = new Module("POO", 0);
+        Module POO = new Module("POO", 1);
         Deux_CPI.AddModule(POO);
         /* Creation d'un module ANA4 */
-        Module ANA4 = new Module("ANA4", 1);
+        Module ANA4 = new Module("ANA4", 2);
         Deux_CPI.AddModule(ANA4);
         /* Creation d'un groupe d'etudiants */
         Etudiant e1 = new Etudiant("chouider", "ikram", "20217", "groupe6_2CPI", Deux_CPI);
@@ -40,6 +40,9 @@ public class App {
         Etudiant[] AbsTD2 = { e4, e2 };
         TD1.setAbsence(AbsTD1);
         TD2.setAbsence(AbsTD2);
+        // TD1.afficher();
+        // TD2.afficher();
+        // ANA4.afficher();
         /* Creation du service assiduite */
         ServiceAssiduite serviceESI = new ServiceAssiduite();
         serviceESI.AddSeance(TD2);
